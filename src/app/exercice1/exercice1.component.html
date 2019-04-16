@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-4">
+    <h2>Liaison de propriété</h2>
+    <img [src]="propriete" alt="Logo dyma">
+  </div>
+  <div class="col-4">
+    <h2>Liaison d'événement</h2>
+    <input [value]="evenement" (input)="evenement=$event.target.value" >
+    <hr>
+    {{evenement}}
+  </div>
+  <div class="col-4">
+      <h2>Interpollation de variable</h2>
+      <input [(ngModel)]="variable">
+      <hr>
+      {{variable}}
+    </div>
+</div>
